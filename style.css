@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;800&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: auto;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 25px;
+  background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar .logo {
+  margin-right: auto;
+}
+.navbar .logo a {
+  font-size: 30px;
+  color: #00274E;
+}
+.navbar .logo span {
+  font-size: 20px;
+  margin-left: 20px;
+  color: #DE8C00;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+.navbar .menu li a{
+  color: #00274E;
+  font-size: 16px;
+}
+
+.navbar button {
+  background: linear-gradient(to right, #F6A600 , #D07400);
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  padding: 10px 30px 10px 20px;
+  border-radius: 0 50px 50px 0;
+}
+.navbar button:hover {
+  cursor: pointer;
+}
+
+.navbar .icons i {
+  font-size: 20px;
+  margin-left: 15px;
+  color: #DE8C00;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* Home styling */
+.home {
+  background-image: url('img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.home .left {
+  font-family: 'Assistant';
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 0.91;
+  color: #FFFFFF;
+  margin-top: 40%;
+  margin-left: 250px;
+}
+.home .left button {
+  background: linear-gradient(to right, #F6A600 , #D07400);
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  border: none;
+  padding: 10px 30px 10px 20px;
+  margin-top: 10%;
+  border-radius: 0 50px 50px 0;
+}
+.home .left button:hover {
+  cursor: pointer;
+}
+
+.home .right {
+  margin-top: 35%;
+  margin-right: auto;
+}
+.home .right .card {
+  width: 490px;
+  background: #00274E;
+  margin-right: 77px;
+  padding: 70px;
+}
+.home .right .card h2 {
+  color: #FFFFFF;
+  font-size: 42px;
+  font-weight: 800;
+  font-family: 'Assistant';
+}
+.home .right .card h3 {
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: 'Assistant';
+  padding-bottom: 15px;
+  padding-right: 110px;
+}
+.home .right .card hr {
+  width: 65px;
+  border: 1px solid #F6A600;
+}
+.home .right .card p {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 25px;
+}
+.home .right .card button {
+  background-color: #00274E;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid #FCC300;
+  padding: 10px 30px 10px 20px;
+  border-radius: 0 50px 50px 0;
+}
+.home .right .card button:hover {
+  cursor: pointer;
+}
+
+/* USP bar */
+.usp {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  background: #FEF7E9;
+  height: 8vh;
+}
+.usp i {
+  padding-right: 30px;
+  font-size: 26px;
+}
+.usp .usp1, .usp2, .usp3 {
+  font-size: 23px;
+  font-weight: 300;
+  font-family: 'Assistant';
+  padding: 20px 100px 0 100px;
+}
+
+/* Responsive */
+@media (max-width: 1375px) {
+  .afspraak {
+    display: none;
+  }
+  .home .left {
+    margin-top: 50%;
+    margin-left: 50px;
+  }
+  .usp i {
+    padding-right: 15px;
+  }
+  .usp .usp1, .usp2, .usp3 {
+    padding: 20px 30px 0 30px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .afspraak {
+    display: none;
+  }
+  .navbar .icons {
+    display: none;
+  }
+  .home .left {
+    margin-top: 50%;
+    margin-left: 50px;
+  }
+  .usp i {
+    padding-right: 15px;
+  }
+  .usp .usp1, .usp2, .usp3 {
+    padding: 20px 30px 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    grid-auto-flow: row;
+    height: 100vh;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-btn i {
+    font-size: 50px;
+    margin-left: 15px;
+    color: #DE8C00;
+    cursor: pointer;
+  }
+  .right {
+    width: 200%;
+    background: #00274E;
+  }
+  .card h2 {
+
+  }
+  .card h3 {
+    text-align: center;
+    padding-right: 0;
+  }
+  .card p{
+    display: none;
+  }
+  .card button {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  hr {
+    display: none;
+  }
+  .usp {
+    display: none;
+  }
+}
